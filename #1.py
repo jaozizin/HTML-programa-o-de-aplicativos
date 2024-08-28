@@ -1,37 +1,37 @@
 #1
-class Carro:
+class Caminhao:
     def __init__(self, marca, modelo, ano, cor):
-        # Inicializa os atributos do carro
+        # Inicializa os atributos do caminhao
         self.marca = marca
         self.modelo = modelo
         self.ano = ano
         self.cor = cor
 
     def exibir_informacoes(self):
-        # Exibe as informações do carro
+        # Exibe as informações do caminhao
         print(self)
 
     def alterar_cor(self, nova_cor):
-        # Altera a cor do carro
+        # Altera a cor do caminhao
         self.cor = nova_cor
 
     def __str__(self):
-        # Retorna uma representação em string do carro
+        # Retorna uma representação em string do caminhao
         return (f"Marca: {self.marca}\n"
                 f"Modelo: {self.modelo}\n"
                 f"Ano: {self.ano}\n"
                 f"Cor: {self.cor}")
 
-# Exemplo de uso da classe Carro
+# Exemplo de uso da classe Caminhao
 if __name__ == "__main__":
-    # Criando uma instância da classe Carro
-    meu_carro = Carro("Toyota", "Corolla", 2020, "Prata")
+    # Criando uma instância da classe Caminhao
+    meu_caminhao = Caminhao("Toyota", "Corolla", 2020, "Prata")
 
-    # Exibindo as informações do carro
-    meu_carro.exibir_informacoes()
+    # Exibindo as informações do caminhao
+    meu_caminhao.exibir_informacoes()
 
-    # Alterando a cor do carro
-    meu_carro.alterar_cor("Azul")
+    # Alterando a cor do caminhao
+    meu_caminhao.alterar_cor("Azul")
 
-    # Exibindo as informações do carro após a alteração da cor
-    meu_carro.exibir_informacoes()
+    # Exibindo as informações do caminhao após a alteração da cor
+    meu_caminhao.exibir_informacoes()
